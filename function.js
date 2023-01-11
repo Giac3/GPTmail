@@ -24,7 +24,7 @@ const ApiCall = async (transcript) => {
 
 
   let encode = encodeURIComponent(prompt)
-  const url = `http://localhost:3000/api?q=${encode}`
+  const url = `YOUR_SERVER/YOUR_ENDPOINT?q=${encode}`
   const res = await fetch(url)
 
   const data = await res.json()

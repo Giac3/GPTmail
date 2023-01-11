@@ -1,7 +1,7 @@
 {
     "name": "GPTmail",
     "version": "1.0.0",
-    "description": "Get AI generated responses for emails",
+    "description": "Get fast AI generated responses for emails",
     "manifest_version": 3,
     "author": "Giacomo Pessotto",
     "action": {
