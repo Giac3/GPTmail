@@ -1,4 +1,4 @@
 # GPTmail
 google chrome extension to generate email responses quickly :)
 
-I will add link to the extension once it gets verified.
+Visit https://chrome.google.com/webstore/detail/mailgpt/elnhmnfhfkglbgimgcclpkjmoboanpop/related to try out the extension.
