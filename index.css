@@ -60,3 +60,42 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.dots-bars-5 {
+    display: none;
+    left: 25px;
+    width: 40px;
+    height: 30px;
+    --c: linear-gradient(white 0 0);
+    background:
+      var(--c) 0    100%/8px 30px,
+      var(--c) 50%  100%/8px 20px,
+      var(--c) 100% 100%/8px 10px;
+    background-repeat: no-repeat;
+    position: relative;
+    clip-path: inset(-100% 0);
+  }
+  .dots-bars-5:before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background:white;
+    left:-16px;
+    top:0;
+    animation: 
+      db5-1 2s   linear infinite,
+      db5-2 0.5s cubic-bezier(0,200,.8,200) infinite;
+  }
+  
+  @keyframes db5-1 {
+    0%   {left:-16px;transform:translateY(-8px)}
+    100% {left:calc(100% + 8px);transform:translateY(22px)}
+  }
+  
+  @keyframes db5-2 {
+    100% {top:-0.1px}
+  }
+  
+  
+  

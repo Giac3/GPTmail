@@ -8,6 +8,9 @@ document.getElementById("generate").addEventListener("click", () => {
   if(document.getElementById('emailIn').value === "") return 
   const email = document.getElementById('emailIn').value
   emailIn = email
+  const load = document.getElementById('load')
+  document.getElementById("input").style.display = "none"
+  load.style.display = "block"
   ApiCall(emailIn)
 })
 
@@ -24,7 +27,7 @@ const ApiCall = async (transcript) => {
 
 
   let encode = encodeURIComponent(prompt)
-  const url = `YOUR_SERVER/YOUR_ENDPOINT?q=${encode}`
+  const url = `https://gptmail-server.herokuapp.com/api?q=${encode}`
   const res = await fetch(url)
 
   const data = await res.json()
@@ -67,6 +70,6 @@ const ApiCall = async (transcript) => {
   let responseArea = document.getElementById("emailOut")
   console.log(responseArea)
   responseArea.textContent = newtext
-  document.getElementById("input").style.display = "none"
+  document.getElementById('load').style.display = "none"
   document.getElementById("response").style.display = "block"
 }

@@ -1,5 +1,5 @@
 {
-    "name": "GPTmail",
+    "name": "mailGPT",
     "version": "1.0.0",
     "description": "Get fast AI generated responses for emails",
     "manifest_version": 3,
